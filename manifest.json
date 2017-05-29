@@ -1,0 +1,36 @@
+{
+  "name": "Lister",
+  "description": "ToDo & List Manager",
+  "short_name": "Lister",
+  "icons": [
+    {
+      "src": "launcher-icon-0-75x.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "density": 0.5
+    },
+    {
+      "src": "launcher-icon-1x.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "density": 1.0
+    },
+    {
+      "src": "launcher-icon-1-5x.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": 2.5
+    },
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "landscape",
+  "scope": "/Lister/",
+  "serviceworker": {
+    "src": "sw.js",
+    "scope": "/Lister/",
+    "use_cache": true
+  },
+  "theme_color":"#4D5D6F",
+  "background_color":"#F5EEEE"
+}

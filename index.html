@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+        <meta name="description" content="Простой и удобный онлайн список дел | Web ToDo list" />
+        <meta name="keywords" content="todo, to do, Do it, DGT, GDT , список дел, онлайн, android, ios, mobile, free, Any.Do, планы, web , веб " />
+        <meta name="apple-mobile-web-app-title" content="Lister">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Lister">
+        <title>Lister - ToDo & List Manager</title>
+        <script onerror='alert("cannot load hammer")' src='hammer.min.js' >  </script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='todo.css' rel='stylesheet' type='text/css'>
+        <link rel='icon' href='burger.png'>
+        <link rel="icon" sizes="192x192" href="FHDburger.png">
+        <link rel="apple-touch-icon-precomposed" href="HDburger.png">
+        <link rel="apple-touch-icon" sizes="192x192" href="FHDburger.png">
+        <link rel="apple-touch-startup-image" href="FHDburger.png">
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+        <div class="header"> 	
+        	<span id="td">todo list</span><p id="listsicon" onclick="showLists()"></p><p id="helpicon" onclick="showHelp()"></p></div>
+        <div class="content" id="cont"></div>
+        <div class="footer">
+            <form name="addnote" action="javascript:add()">
+                <input type="text" name="thing" class="input" id="thing" placeholder="write something here" autocomplete="off"><input type="button" name="bttn" class="bttn" value=" " onclick="add()">
+            </form>
+        </div>
+        <div id="listbox" class="helpbox" style="opacity: 0;display:none;">
+            <div id="xhtitle">lists list</div>
+            <div id="ruh">
+            </div>
+            <div id="ene">
+                <form action="javascript:addList()" name="listform"><input type="text" autocomplete="off" style="border-radius: 0 0 0 4px;" placeholder="" id="listi" class="input" name="thing"><input type="button" style="border-radius: 0 0 4px 0;" onclick="addList()" value=" " class="bttn" name="bttn"></form>
+            </div>
+            <div id="okhbtn" onclick="window.close()">x</div>
+        </div>
+        <script src="todo.js"></script>
+    </body>
+</html>
