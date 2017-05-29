@@ -4,23 +4,23 @@
   "short_name": "Lister",
   "icons": [
     {
-      "src": "launcher-icon-0-75x.png",
+      "src": "burger.png",
       "sizes": "32x32",
       "type": "image/png",
       "density": 0.5
     },
     {
-      "src": "launcher-icon-1x.png",
+      "src": "HDburger.png",
       "sizes": "64x64",
       "type": "image/png",
       "density": 1.0
     },
     {
-      "src": "launcher-icon-1-5x.png",
+      "src": "FHDburger.png",
       "sizes": "192x192",
       "type": "image/png",
       "density": 2.5
-    },
+    }
   ],
   "start_url": "index.html",
   "display": "standalone",

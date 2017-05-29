@@ -179,7 +179,7 @@ function setEvents(){
    Hammer(el).on("tap", function(e){selectList(e.target)});
   }
 }
-//everything bellow was not modefied (almost)
+
 function showHelp(){ 
   var helpBox=document.createElement('div');
   helpBox.id="helpbox";
@@ -195,6 +195,6 @@ init();
 
 if(navigator.serviceWorker){
   navigator.serviceWorker.register('sw.js', {
-  scope: '/Lister'
+  scope: '/Lister/'
 });
 }

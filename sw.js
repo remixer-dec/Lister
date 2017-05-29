@@ -10,8 +10,11 @@ function precache() {
     return cache.addAll([
       './index.html',
       './todo.js',
+      './hammer.min.js',
       './todo.css',
-      './burger.png',      
+      './burger.png',
+      './HDburger.png',
+      './FHDburger.png'
     ]);
   });
 }
