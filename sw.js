@@ -23,7 +23,11 @@ function precache() {
 
 self.addEventListener('fetch', function(evt) {
   console.log('The service worker is serving the asset.');
-  evt.respondWith(fromCache(evt.request));
+  if(evt.request.url.search('woff') != -1 ){
+  	evt.respondWith(fetch(evt.request));
+  } else {
+  	evt.respondWith(fromCache(evt.request));	
+  }
 });
 
 function fromCache(request) {
