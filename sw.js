@@ -8,13 +8,15 @@ self.addEventListener('install', function(evt) {
 function precache() {
   return caches.open(CACHE).then(function (cache) {
     return cache.addAll([
+      './',
       './index.html',
       './todo.js',
       './hammer.min.js',
       './todo.css',
       './burger.png',
       './HDburger.png',
-      './FHDburger.png'
+      './FHDburger.png',
+      'https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic'
     ]);
   });
 }
